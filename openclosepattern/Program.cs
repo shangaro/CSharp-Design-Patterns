@@ -6,7 +6,7 @@ namespace openclosepattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello youmma!");
+            Console.WriteLine("Hello remove idea!");
         }
     }
 }
