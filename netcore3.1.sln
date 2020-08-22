@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosePrinciple", "OpenC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "FactoryPattern\FactoryPattern.csproj", "{6EF494EB-28CA-4F2D-9339-EC4B74AA2442}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryPattern", "AbstractFactoryPattern\AbstractFactoryPattern.csproj", "{8E03984A-78C6-46D0-B978-C35D84D6AF68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{6EF494EB-28CA-4F2D-9339-EC4B74AA2442}.Release|x64.Build.0 = Release|Any CPU
 		{6EF494EB-28CA-4F2D-9339-EC4B74AA2442}.Release|x86.ActiveCfg = Release|Any CPU
 		{6EF494EB-28CA-4F2D-9339-EC4B74AA2442}.Release|x86.Build.0 = Release|Any CPU
+		{8E03984A-78C6-46D0-B978-C35D84D6AF68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E03984A-78C6-46D0-B978-C35D84D6AF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E03984A-78C6-46D0-B978-C35D84D6AF68}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8E03984A-78C6-46D0-B978-C35D84D6AF68}.Debug|x64.Build.0 = Debug|Any CPU
+		{8E03984A-78C6-46D0-B978-C35D84D6AF68}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8E03984A-78C6-46D0-B978-C35D84D6AF68}.Debug|x86.Build.0 = Debug|Any CPU
+		{8E03984A-78C6-46D0-B978-C35D84D6AF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E03984A-78C6-46D0-B978-C35D84D6AF68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E03984A-78C6-46D0-B978-C35D84D6AF68}.Release|x64.ActiveCfg = Release|Any CPU
+		{8E03984A-78C6-46D0-B978-C35D84D6AF68}.Release|x64.Build.0 = Release|Any CPU
+		{8E03984A-78C6-46D0-B978-C35D84D6AF68}.Release|x86.ActiveCfg = Release|Any CPU
+		{8E03984A-78C6-46D0-B978-C35D84D6AF68}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
