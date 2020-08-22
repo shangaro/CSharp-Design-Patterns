@@ -6,4 +6,4 @@
  2. Abstract Design Pattern
 
  ## Principles
- 1. OpenClosePrinciple
+ 1. OpenClosePrinciple - A method should be closed for changes and open for extensions.
