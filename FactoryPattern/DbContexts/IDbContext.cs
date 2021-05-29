@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryPattern.ProductCreation
+namespace FactoryPattern.DbContexts
 {
-    public class ProductCreator
+    public interface IDbContext
     {
-        
+        void Connect();
+
+        void DisConnect();
     }
 }
