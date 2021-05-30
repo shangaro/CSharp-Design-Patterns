@@ -8,6 +8,8 @@ namespace FactoryPattern
 {
     public class DbContextFactory : IDbContextFactory
     {
+        public IDbContextOptionBuilder builder = new DbContextOptionBuilder();
+
         public T Create<T>() where T : class
         {
             Type[] assemblyTypes = Assembly.GetExecutingAssembly().GetTypes();
@@ -34,19 +36,25 @@ namespace FactoryPattern
             return dbContext;
         }
 
-        public IDbContext CreateSql()
+        public IDbContext CreateGraph(Action<IDbContextOptionBuilder> action)
         {
-            return new SqlDbContext();
+            action?.Invoke(builder);
+            var dbContextOptions = builder.Build();
+            return new GraphDbContext(dbContextOptions);
         }
 
-        public IDbContext CreateMongo()
+        public IDbContext CreateMongo(Action<IDbContextOptionBuilder> action)
         {
-            return new MongoDbContext();
+            action?.Invoke(builder);
+            var dbContextOptions = builder.Build();
+            return new MongoDbContext(dbContextOptions);
         }
 
-        public IDbContext CreateGraph()
+        public IDbContext CreateSql(Action<IDbContextOptionBuilder> action)
         {
-            return new GraphDbContext();
+            action?.Invoke(builder);
+            var dbContextOptions = builder.Build();
+            return new SqlDbContext(dbContextOptions);
         }
     }
 }

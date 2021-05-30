@@ -1,15 +1,14 @@
 ﻿using FactoryPattern.DbContexts;
+using System;
 
 namespace FactoryPattern
 {
     public interface IDbContextFactory
     {
-        T Create<T>() where T : class;
+        IDbContext CreateGraph(Action<IDbContextOptionBuilder> action);
 
-        IDbContext CreateGraph();
+        IDbContext CreateMongo(Action<IDbContextOptionBuilder> action);
 
-        IDbContext CreateMongo();
-
-        IDbContext CreateSql();
+        IDbContext CreateSql(Action<IDbContextOptionBuilder> action);
     }
 }
